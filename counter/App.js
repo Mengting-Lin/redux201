@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { connect } from 'react-redux'
 
-function CounterApp(props) {
+function App(props) {
   // const [total, setTotal] = useState(0)
   console.log(props)
 
@@ -48,4 +48,4 @@ const mapStateToProps = (store) => {
 // 高級元件可自動得到store.dispatch
 const mapDispatchToProps = null
 
-export default connect(mapStateToProps, mapDispatchToProps)(CounterApp)
+export default connect(mapStateToProps, mapDispatchToProps)(App)
